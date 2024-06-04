@@ -23,7 +23,7 @@ class ContactosController {
       from: EMAIL_USER,
       to: EMAIL_DESTINO1, // Agrega más destinatarios si es necesario
       subject: 'Nuevo registro de usuario',
-      text: 'Nombre: '+name+'\nEmail: '+email+'\nMensaje: '+mensaje+'ip:'+ip+ '\nfecha: '+fecha+'\npais: '+pais
+      text: 'Nombre: '+name+'\nEmail: '+email+'\nMensaje: '+mensaje+'\nip:'+ip+ '\nfecha: '+fecha+'\npais: '+pais
     };
     this.transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
